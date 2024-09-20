@@ -1,4 +1,4 @@
-package com.accenture.pokemonShop.users.model;
+package com.accenture.pokemonShop.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
