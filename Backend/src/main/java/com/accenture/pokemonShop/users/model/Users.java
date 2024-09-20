@@ -22,6 +22,6 @@ public class Users {
     private String phone_number;
     private String role;
     private String credit_card_info;
-    private String shipping_adress;
+    private String shipping_address;
     private String password;
 }
