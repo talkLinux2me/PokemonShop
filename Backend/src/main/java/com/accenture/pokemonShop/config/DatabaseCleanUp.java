@@ -13,33 +13,36 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+
 @Configuration
-public class DatabaseCleanUp {
+public class  DatabaseCleanUp {
     @Autowired
     private DataSource dataSource;
 
     @Bean
-    public DatabaseCleanup databaseCleanup(){
+    public DatabaseCleanup databaseCleanup() {
         return new DatabaseCleanup(dataSource);
     }
 
-    public static class DatabaseCleanup{
+    public static class DatabaseCleanup {
         private DataSource dataSource;
-        private final Logger logger =  org.slf4j.LoggerFactory.getLogger(DatabaseCleanup.class);
+        private final Logger logger = org.slf4j.LoggerFactory.getLogger(DatabaseCleanup.class);
 
-        public  DatabaseCleanup(DataSource dataSource){
+        public DatabaseCleanup(DataSource dataSource) {
             this.dataSource = dataSource;
         }
 
         @PreDestroy
-        public void dropDatabaseTable(){
-            try(Connection connection = dataSource.getConnection()){
+        public void dropDatabaseTable() {
+            try (Connection connection = dataSource.getConnection()) {
                 Statement statement = connection.createStatement();
                 statement.executeUpdate("DROP TABLE IF EXISTS details");
                 logger.info("Table dropped successfully");
             } catch (SQLException e) {
                 throw new RuntimeException(e);
+
             }
         }
     }
 }
+
