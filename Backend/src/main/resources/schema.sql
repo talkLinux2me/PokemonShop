@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS Shipping (
+id INT PRIMARY KEY,
+name V
+
+
+
+
+
+ )
