@@ -1,14 +1,15 @@
-import './App.css'
-import Admin from './components/Admin'
-import Home from './componenta/Home.jsx'
+import SignUp from "./components/Signup"
+import Admin from "./components/Admin"
+import Home from "./components/Home.jsx"
+import "./App.css"
+
 function App() {
-
-
-
+ 
   return (
     <>
+      <SignUp/>
       <Home />
-     <Admin/>
+      <Admin/>
     </>
   )
 }
