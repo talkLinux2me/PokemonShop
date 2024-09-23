@@ -1,6 +1,6 @@
 import SignUp from "./components/Signup"
 import Admin from "./components/Admin"
-import Home from "./components/Home.jsx"
+import Home from "./componenta/Home.jsx"
 import "./App.css"
 
 function App() {
