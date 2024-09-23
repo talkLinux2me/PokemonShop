@@ -1,4 +1,3 @@
-import React from "react";
 import Carousel from "./Carousel";
 import Multi1 from "../assets/Packs/MultiPacks.jpg"
 import Multi2 from "../assets/Packs/MultiPack2.jpg"

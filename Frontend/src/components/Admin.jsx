@@ -1,6 +1,4 @@
-
-
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Eye, EyeOff, Lock, Mail, User } from 'lucide-react'
 
 function Admin() {
